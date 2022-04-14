@@ -7,8 +7,10 @@
  
    +) calculator.py의 경우 추가적인 수정을 통해 버전 변경
 
-2. 노트북에서 한 작업 데스크탑에서 이어서 하기
+(*) 노트북에서 한 작업 데스크탑에서 이어서 하기
    - desktop의 local repository와 연결할 github의 원격 repository간 연동
    - git remote add (복사할 원격 repository address)
    - git clone 명령어를 통해 원격 repository의 내용 받아오기
    - git clone (복사할 원격 repository address)
+
+2. manual README.md 파일을 만들어 원격 repository에 보내기
