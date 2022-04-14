@@ -21,4 +21,23 @@
      2. 협업(Team Project) 가능
 
 3. 다른 project 가져오기
-   - 
+   - git clone (복사할 github의 repository address) : github project의 repository를 그대로 복제
+
+** Open Source Project
+   - Source Code가 공개되어 있는 Project
+   - numpy, Linux, MySQL Server 등
+   - Source Code가 공개되어야 함
+   - 누구나 code를 자유롭게 가져다가 사용할 수 있음
+   - 원래의 코드를 자신이 원하는대로 수정할 수 있음
+   - Open Source License
+      - 기존의 open source 내용 중 조금이라도 사용한 부분이 있는 경우, 해당 부분을 표시하고 사용
+      - open source가 활용되는 부분이 있는 Code는 Open Source로 공개해야 함
+   - 장점
+      - 무료로 사용 가능
+      - 폐쇠적으로 Code를 관리하는 것 보다 Code의 신뢰도가 높을 수 있음(여러 개발자가 참여)
+      - 프로젝트에 참여중인 다른 개발자들에게 질문을 할 수 있음
+   - 단점
+      - 참여자의 수가 적거나, 실력이 좋지 않은 경우 신뢰성이 낮아질 수 있음
+      - Open Source의 문제 발생 시, 보상을 해주거나 책임을 질 주체가 없음
+
+(+) Markdown 작성 시 참고 링크 : https://gist.github.com/ihoneymon/652be052a0727ad59601
