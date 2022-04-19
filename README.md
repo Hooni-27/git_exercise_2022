@@ -41,3 +41,12 @@
       - Open Source의 문제 발생 시, 보상을 해주거나 책임을 질 주체가 없음
 
 (+) Markdown 작성 시 참고 링크 : https://gist.github.com/ihoneymon/652be052a0727ad59601
+
+4. commit history 살펴보기
+   - git log : 해당 repository에서 진행하였던 commit 정보 출력
+      - git log --pretty=oneline : commit 정보들을 한줄에 모두 출력
+   - git show (commit id 앞 4자리) : 해당 commit과 이전에 진행하였던 commit의 차이점을 보여줌
+      - "---" : 해당 commit 이전의 모습
+      - "+++" : 해당 commit에서의 모습
+      - ![image](https://user-images.githubusercontent.com/79882248/163895875-ead91e7d-b3a5-4e41-bdf8-e1b1bf28f536.png)
+
