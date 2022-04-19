@@ -68,9 +68,21 @@
 
 * 긴 Command에 alias 설정 (git config)
    - git log --pretty=oneline -> git history로 설정
-   - git config alias.history 'log --pretty=oneline"
+   - git config alias.history "log --pretty=oneline"
   
 5. 두 Commit 간의 차이 보기(git diff)
    - git diff (이전 commit id 앞 4자리) (앞 commit id 앞 4자리)
-        
+
+6. git에서 HEAD의 의미
+   - HEAD : 어떤 Commit 하나를 가리킴
+      -> 보통 가장 최근에 한 Commit을 가리킴
+   - HEAD의 중요성
+      - Working Directory / Working Tree의 내부 => HEAD가 가리키는 commit에 따라 구성
+   - git reset : 이전에 하였던 commit을 가리키도록 하는 명령어
+      - git reset --hard (가고싶은 commit id 앞 4자리) : 가고싶은 commit으로 HEAD 이동
+      - git reset을 통해 HEAD가 과거의 commit을 가리키게 할 수 있음
+      - Working Directory의 내용도 과거 commit의 모습으로 돌아가게 할 수 있음
+   - --hard, --soft, --mixed
+      - HEAD가 working directory, staging area, repository 중 어디 영역까지 reset하는지에 따라 구분
+      - ![image](https://user-images.githubusercontent.com/79882248/163928821-b9acacb2-541d-462a-8cc5-1f18e8e501d5.png)
 
