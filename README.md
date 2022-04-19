@@ -65,5 +65,12 @@
 
       ![image](https://user-images.githubusercontent.com/79882248/163895875-ead91e7d-b3a5-4e41-bdf8-e1b1bf28f536.png)
 
+
+* 긴 Command에 alias 설정 (git config)
+   - git log --pretty=oneline -> git history로 설정
+   - git config alias.history 'log --pretty=oneline"
+  
+5. 두 Commit 간의 차이 보기(git diff)
+   - git diff (이전 commit id 앞 4자리) (앞 commit id 앞 4자리)
         
 
