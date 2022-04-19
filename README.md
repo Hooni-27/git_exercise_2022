@@ -13,6 +13,9 @@
       -> #을 붙이지 않은 채 본인이 입력하고 싶은 commit message 입력
       -> 복잡하고 긴 commit message를 쉽게 남길 수 있음
       
+ ※ git commit --amend : 최신 commit을 수정해서 다시 새로운 commit으로 만들기
+ 
+ 
 (*) 노트북에서 한 작업 데스크탑에서 이어서 하기(4/14)
    - desktop의 local repository와 연결할 github의 원격 repository간 연동
    - git remote add (복사할 원격 repository address)
