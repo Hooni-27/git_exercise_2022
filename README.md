@@ -5,7 +5,11 @@
 
 1. calculator.py & License 파일 생성 및 github에 저장 (commit message : "Create calculate")
    +) calculator.py의 경우 추가적인 수정을 통해 버전 변경
-
+   ※ commit message('-m') 없이 commit 하기 : git commit -> 아래와 같은 메세지 출력
+      ![image](https://user-images.githubusercontent.com/79882248/163896398-719fac5f-16e4-4f83-874d-1e059768d78b.png)
+      -> #을 붙이지 않은 채 본인이 입력하고 싶은 commit message 입력
+      -> 복잡하고 긴 commit message를 쉽게 남길 수 있음
+      
 (*) 노트북에서 한 작업 데스크탑에서 이어서 하기(4/14)
    - desktop의 local repository와 연결할 github의 원격 repository간 연동
    - git remote add (복사할 원격 repository address)
