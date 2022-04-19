@@ -44,9 +44,13 @@
 
 4. commit history 살펴보기
    - git log : 해당 repository에서 진행하였던 commit 정보 출력
+   ![image](https://user-images.githubusercontent.com/79882248/163896018-9c718af1-cbf4-41ff-9d52-372b65d2b5ac.png)
+
       - git log --pretty=oneline : commit 정보들을 한줄에 모두 출력
+      ![image](https://user-images.githubusercontent.com/79882248/163895976-ba844d6f-2df2-4bb8-aa12-2c3a3b00f2a0.png)
+
    - git show (commit id 앞 4자리) : 해당 commit과 이전에 진행하였던 commit의 차이점을 보여줌
       - "---" : 해당 commit 이전의 모습
       - "+++" : 해당 commit에서의 모습
-      - ![image](https://user-images.githubusercontent.com/79882248/163895875-ead91e7d-b3a5-4e41-bdf8-e1b1bf28f536.png)
+       ![image](https://user-images.githubusercontent.com/79882248/163895875-ead91e7d-b3a5-4e41-bdf8-e1b1bf28f536.png)
 
