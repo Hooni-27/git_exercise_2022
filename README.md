@@ -93,3 +93,11 @@
       - git tag [tag name] [commit id]
       - project directory에 있는 모든 tag 조회 : git tag
       - 각 tag와  연결된 commit 확인 : git show [tag name]
+
+5. Branch
+   - 하나의 code 관리 흐름
+   - branch 생성 : git branch [branch name]
+      - 생성 된 branch로 바로 이동 : git checkout -b [bramch name]
+   - 만든 branch로의 이동 : git checkout [가고싶은 branch name]
+   - branch 조회 : git branch
+   - branch 삭제 : git branch -d [삭제할 branch name]
