@@ -85,4 +85,4 @@
    - --hard, --soft, --mixed
       - HEAD가 working directory, staging area, repository 중 어디 영역까지 reset하는지에 따라 구분
       - ![image](https://user-images.githubusercontent.com/79882248/163928821-b9acacb2-541d-462a-8cc5-1f18e8e501d5.png)
-
+   - reset 전 상태로의 복구 : git pull 사용(단, 이전 내용에 대해 git push가 이루어져야 함)
