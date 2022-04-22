@@ -1,4 +1,4 @@
-# Calculator (function = Add, Sub, Mul)
+# Calculator (function = Add, Sub, Mul, Div)
 def add(a, b):
     return a + b
 
@@ -7,3 +7,7 @@ def substract(a, b):
 
 def multiply(a, b):
     return a * b
+
+def divide(a, b):
+    if b != 0:
+        return a / b
