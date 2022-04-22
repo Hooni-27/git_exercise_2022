@@ -86,3 +86,10 @@
       - HEAD가 working directory, staging area, repository 중 어디 영역까지 reset하는지에 따라 구분
       - ![image](https://user-images.githubusercontent.com/79882248/163928821-b9acacb2-541d-462a-8cc5-1f18e8e501d5.png)
    - reset 전 상태로의 복구 : git pull 사용(단, 이전 내용에 대해 git push가 이루어져야 함)
+   - HEAD 기준 reset
+      - HEAD^ : HEAD 바로 이전 commit을 나타냄
+      - HEAD~n : HEAD 보다 n번째 전에 있는 commit을 나타냄
+   - commit message 이외에 tag 달기
+      - git tag [tag name] [commit id]
+      - project directory에 있는 모든 tag 조회 : git tag
+      - 각 tag와  연결된 commit 확인 : git show [tag name]
