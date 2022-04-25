@@ -101,3 +101,18 @@
    - 만든 branch로의 이동 : git checkout [가고싶은 branch name]
    - branch 조회 : git branch
    - branch 삭제 : git branch -d [삭제할 branch name]
+   - branch의 Merge(병합) : git merge [합치고 싶은 branch] -> 다른 branch에서의 내용을 가져와야할 때 사용하기 유용
+      - merge 시 comflict이 나는 경우 : 합치고자 하는 branch와 target branch 간의 충돌 발생(두가지 중 무엇을 반영해야하는지 모름)
+      - ![image](https://user-images.githubusercontent.com/79882248/165004082-11100c68-fb20-47ff-a942-d247801d69f9.png)
+      - 해결 방법1
+         1. conflict가 발생한 file을 연다
+         2. merge의 결과가 되었으면 하는 모습대로 code를 수정한다
+         3. 수정 후 commit
+      - 해결 방법2 : merge의 작업 취소
+         - git merge --abort
+         - confilct가 발생한 file들이 너무 많아, conflict를 최소화할 수 있는 방식으로 file들을 다시 수정하고 commit한 뒤 merge를 진행하고 싶은 경우
+         - 좀 더 이후에 merge하고 싶은 경우 유용
+      - 단일 file이 아닌 여러개의 file에서 conflict가 발생한 경우
+         - 파일 하나씩 confilct를 해결 후 git add [file name]을 통해 "하나씩" staging area에 올린다
+         - 모든 file들의 conflict들을 다 해결하고, git add . 를 통해 한번에 staging area에 올린다
+
