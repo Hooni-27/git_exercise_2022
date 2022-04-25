@@ -147,7 +147,9 @@
             3. 다른 branch가 가리키는 commit
             => 해당 commit들을 기준으로 merge commit을 자동으로 만들어 냄
 
-
+6. 실무에서 Git과 GitHub
+   - git fetch : merge를 하지 않고, 가져오는것만 진행
+      - remote repository에 있는 branch의 내용을 일단 가져와서 살펴본 후, merge하고 싶을 때 사용
 
 
  
