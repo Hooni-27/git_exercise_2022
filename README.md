@@ -115,4 +115,4 @@
       - 단일 file이 아닌 여러개의 file에서 conflict가 발생한 경우
          - 파일 하나씩 confilct를 해결 후 git add [file name]을 통해 "하나씩" staging area에 올린다
          - 모든 file들의 conflict들을 다 해결하고, git add . 를 통해 한번에 staging area에 올린다
-
+ 
