@@ -115,4 +115,39 @@
       - 단일 file이 아닌 여러개의 file에서 conflict가 발생한 경우
          - 파일 하나씩 confilct를 해결 후 git add [file name]을 통해 "하나씩" staging area에 올린다
          - 모든 file들의 conflict들을 다 해결하고, git add . 를 통해 한번에 staging area에 올린다
+   - HEAD와 Branch의 관계
+      - HEAD : 어떤 commit 하나를 가리킴
+      - branch : 하나의 코드 관리 흐름
+      - ![image](https://user-images.githubusercontent.com/79882248/165007548-0ffc076e-7590-45a1-8b97-282fcb30b6dd.png)
+      - HEAD는 master branch를 통해 간접적으로 commit을 가리킴
+      - ![image](https://user-images.githubusercontent.com/79882248/165007665-06f241e5-ec68-4d6c-b047-3d5505bfcd63.png)
+      - Merge Commit
+      - ![image](https://user-images.githubusercontent.com/79882248/165007934-9f273961-8f8c-4431-b1a6-6bcc40b1b523.png)
+      - git reset command의 원리
+         1. HEAD는 여전히 같은 branch(master)를 가리킴
+         2. HEAD가 가리키는 branch가 다른 특정 commit을 가리킴
+         => HEAD가 간접적으로 가리키던 commit도 바뀌게 됨
+         => 과거의 commit으로 git reset 하여도, 이후 commit들이 삭제되지 않고 유지됨
+         => git reset은 현재 HEAD가 가리키는 commit 이후의 commmit으로도 이동할 수 있음
+   - git checkout과 git reset의 차이
+      - git checkout : HEAD가 commit을 직접적으로 가리키게 할 수 있음 + branch를 직접 가리키게 만들 수 있음
+      - git reset : HEAD는 branch를 통해서 간접적으로 commit을 가리킴
+      - ![image](https://user-images.githubusercontent.com/79882248/165010152-5b952b20-17f2-4d36-9f87-71a794ee49b8.png)
+   - merge
+      - Fast-forward Merge
+         - 새로운 commit이 생기는게 아닌 branch가 이동하게 되는 merge
+         - commit history에서 같은 line 상에 있는 branch를 merge할 경우 발생
+         - ![image](https://user-images.githubusercontent.com/79882248/165012278-0f5df243-9d17-4c63-b261-95a31a53bec2.png)
+
+      - 3-way Merge
+         - 3가지의 commmit을 고려해서 merge 실행
+         - ![image](https://user-images.githubusercontent.com/79882248/165012349-294d3177-c3ba-45ef-bc3b-f61211fe529b.png)
+            1. 두 갈래로 갈라지기 전 공통 조상이 되는 commit
+            2. 한 branch가 가리키는 commit
+            3. 다른 branch가 가리키는 commit
+            => 해당 commit들을 기준으로 merge commit을 자동으로 만들어 냄
+
+
+
+
  
