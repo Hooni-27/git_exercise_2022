@@ -148,8 +148,12 @@
             => 해당 commit들을 기준으로 merge commit을 자동으로 만들어 냄
 
 6. 실무에서 Git과 GitHub
+   - git pull : remote repositor의 branch를 검토할 필요없이 바로 merge하고 싶은 경우 사용
    - git fetch : merge를 하지 않고, 가져오는것만 진행
       - remote repository에 있는 branch의 내용을 일단 가져와서 살펴본 후, merge하고 싶을 때 사용
+      - git diff (local) (remote) : 차이점 확인
+   - git blame (확인하고자 하는 file) : 어떤 파일의 특정 코드를 누가 작성했는지 찾아내기 위한 command
+   - git show (확인하고자 하는 commit id) : 해당 commit에 해당하는 code의 변경점 확인
 
 
  
