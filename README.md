@@ -154,6 +154,37 @@
       - git diff (local) (remote) : 차이점 확인
    - git blame (확인하고자 하는 file) : 어떤 파일의 특정 코드를 누가 작성했는지 찾아내기 위한 command
    - git show (확인하고자 하는 commit id) : 해당 commit에 해당하는 code의 변경점 확인
+   - 이미 remote repository에 올라간 commit을 취소해야하는 경우
+      - git revert [되돌리고 싶은 commit의 id]
+      - local repository에서만 작업을 하는 경우 : reset으로도 해결 가능
+      - ![image](https://user-images.githubusercontent.com/79882248/165198274-3a8cec0b-55ec-45bf-b4df-3ea0dd0c2230.png)
+         -> 해당 상태에서는 git push를 실행할 수 없음 : remote repository보다 한단계 아래의 commit에 있기 때문
+      - ![image](https://user-images.githubusercontent.com/79882248/165198425-3c4b17dc-f676-47cb-ab4d-09d9638218c8.png)
+   - 여러 commit 취소하기(git revert의 범위 지정)
+      - git revert (되돌리고 싶은 commit id의 이전 id)..(취소할 commit id의 끝 범위)
+      - ![image](https://user-images.githubusercontent.com/79882248/165198700-473176aa-1121-4213-aba3-5369a9c41bc1.png)
+         -> 이떄, "facd...." commit은 포함되지 않는다 
 
+7. Git 활용
+   - git reset 후 다시 돌아오기
+      - git reset (--hard/--mixed/--soft) [최신 commit id or 돌아가고 싶은 commit id]
+      - reset을 해도 그 이후 commit들이 삭제되는 것은 아님
+      - 최신 commit id를 모르는 경우 : git reflog
+   - commit history를 보는 다양한 방법(git log --pretty=oneline)
+      - 현재 위치한 branch의 commit history뿐만 아니라 다른 branch의 commit history 확인 : --all 옵션 추가
+      - --graph option : commit history가 각 branch와의 관계가 잘 드러나도록 그래프 형식으로 출력
+      - ![image](https://user-images.githubusercontent.com/79882248/165201123-262b0252-ee92-4397-99ae-922a17549bbb.png)
+   - git을 GUI 환경에서 사용하게 할 수 있는 프로그램 : Sourcetree, GitKraken 등
+   - git rebase : base를 다시 지정, commit을 재배치한다
+      - git rebase --continue : conflict가 발생하여 제대로 진행되지 못한 rebase를 계속 진행(git commit으로 진행하지 않는다)
+      - ![image](https://user-images.githubusercontent.com/79882248/165203105-8c4ff918-4048-4df7-9d6c-1883bb0a0b67.png)
+      - ![image](https://user-images.githubusercontent.com/79882248/165203166-9e395ced-f53e-4c8a-ad08-b05fb60a1858.png)
+      - merge와 rebase와 차이점
+         - rebase는 새로운 commit을 만들지 않는다.
+         - rebase로 만들어진 commit history는 merge로 만들어진 commit history보다 좀 더 깔끔하다.
+   - 작업 내용 임시 저장(git stash)
+      - git stash : working directory에서 작업하던 내용을 git이 따로 보관(stack 형태로 저장)
+      - git stash list : stack에 저장된 내용 확인
+      - 최근 commit 이후로 작헙했던 내용은 모두 스택에 옮겨지고, working directory 내부는 다시 최근 commit의 상태로 초기화
+      - git stash apply : stack에 있는 내용을 다시 working directory로 가져와서 적용
 
- 
