@@ -13,6 +13,12 @@ def divide(a, b):
         return a / b
     else:
         return 0
+<<<<<<< HEAD
 
 def square(a):
     return a*a
+=======
+    
+    
+### This is test
+>>>>>>> 09fae278c2bd3bb8e3a7c24fcc3dd35366fc51bb
