@@ -187,4 +187,17 @@
       - git stash list : stack에 저장된 내용 확인
       - 최근 commit 이후로 작헙했던 내용은 모두 스택에 옮겨지고, working directory 내부는 다시 최근 commit의 상태로 초기화
       - git stash apply : stack에 있는 내용을 다시 working directory로 가져와서 적용
+   - 잘못된 branch에서 작업하는 경우
+      - git stash 활용
+         1. git stash로 stack에 작업 내용 저장
+         2. 올바른 branch로 가서 다시 git stash apply를 실행
+   - git stash drop [삭제하고 싶은 작업 내용의 id] : 이미 적용한 작업내용을 stack에서 지우기
+   - git stash pop [작업 내용의 id] : 작업 내용을 적용하면서, 동시에 stack에서 제거해주는 commmand
+      - stack에 저장된 작업 내용을 working directory에 적용할 때, 나중에 또 사용할 필요가 없는 경우 사용
+   - 필요한 commit만 가져오는 Command(git cherry-pick)
+      - git cherry-pick (가져오고 싶은 commit id)
+   - 여러 commit을 하나의 commmit으로 만들기
+      - git reset의 option 활용
+         - --mixed, --soft option 사용 
+         - HEAD는 이전 commit을 가리키지만 working directory는 그대로 유지
 
